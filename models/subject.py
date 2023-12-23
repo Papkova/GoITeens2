@@ -5,7 +5,7 @@ from .database import Base
 
 
 table_relationship = Table(
-    "relationship_between_tables",
+    "relationship_between_tables",                       #табличка яка описує зв'язок many to many
     Base.metadata, Column("subject_id", Integer, ForeignKey("subjects.id")),
     Column("group_id", Integer, ForeignKey("groups.id"))
 
